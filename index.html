@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffe7ef">
+<title>For Somya 💗</title>
+<style>
+:root{--pink:#ff5f9e;--deep:#9f315d;--cream:#fff8f4;--ink:#593548}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:linear-gradient(145deg,#fff9f5,#ffe4ee 55%,#f8e7ff);overflow-x:hidden}
+button,input{font:inherit}
+button{cursor:pointer}
+nav{position:sticky;top:0;z-index:10;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:10px;background:#fff8f4d9;backdrop-filter:blur(12px);border-bottom:1px solid #ffd2e1}
+nav a{color:#9f315d;text-decoration:none;font-size:.9rem;padding:8px 12px;border-radius:99px;background:#fff}
+section{padding:64px 18px;max-width:960px;margin:auto}
+.hero{min-height:90svh;display:grid;place-items:center;text-align:center;position:relative;padding:55px 18px;overflow:hidden}
+.eyebrow{letter-spacing:.16em;text-transform:uppercase;font-size:.75rem;color:#b45a7e;font-weight:700}
+h1{font-family:Georgia,serif;font-size:clamp(2.7rem,10vw,5.6rem);line-height:1.03;margin:14px 0;color:#b83269}
+h2{font-family:Georgia,serif;font-size:clamp(2rem,6vw,3rem);color:#a73365;margin:0 0 12px}
+p{line-height:1.7}
+.hero p{max-width:580px;margin:0 auto 24px}
+.heart-big{font-size:clamp(4rem,13vw,7rem);display:inline-block;filter:drop-shadow(0 12px 20px #f58bb7aa);animation:beat 1.3s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+.btn{border:0;border-radius:99px;padding:12px 20px;background:linear-gradient(100deg,#ff629d,#d83f86);color:white;font-weight:750;box-shadow:0 8px 20px #d83f8633}
+.btn.secondary{background:white;color:#a73365;border:1px solid #ffc4da;box-shadow:none}
+.card{background:#ffffffb8;border:1px solid #fff;border-radius:24px;padding:clamp(18px,4vw,30px);box-shadow:0 16px 45px #a9447220}
+.center{text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:18px;align-items:stretch}
+.small{font-size:.88rem;color:#8b6073}
+input[type=file]{max-width:100%;margin:12px 0;color:#765064}
+input[type=text]{width:100%;border:1px solid #f1b7ce;border-radius:12px;padding:12px;background:white;color:var(--ink)}
+.tree-wrap{position:relative;max-width:600px;margin:20px auto 0;min-height:300px}
+.tree-wrap svg{width:100%;height:auto;display:block}
+.tree-heart{transform-box:fill-box;transform-origin:center;animation:sway 3s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-3deg) scale(1)}50%{transform:rotate(3deg) scale(1.04)}}
+.floating{position:fixed;bottom:-40px;z-index:0;pointer-events:none;animation:floatUp linear forwards;opacity:.75}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+main,nav{position:relative;z-index:1}
+.letter{font-family:Georgia,serif;font-size:1.1rem;white-space:pre-line}
+.puzzle{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;max-width:360px;aspect-ratio:1;margin:18px auto;background:#fff;padding:5px;border-radius:15px;overflow:hidden}
+.tile{border:0;border-radius:4px;background:#ffdce9;overflow:hidden;position:relative;min-width:0;min-height:0}
+.tile img{width:300%;height:300%;max-width:none;position:absolute;pointer-events:none}
+.tile.empty{background:linear-gradient(135deg,#fff0f6,#ffd2e3);border:2px dashed #e9a1bf}
+.puzzle-note{font-size:.85rem}
+footer{text-align:center;padding:30px 16px;color:#a25b7b}
+hr{border:0;border-top:1px solid #ffd0e0;margin:20px 0}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav aria-label="Page sections">
+<a href="#home">Home</a><a href="#tree">Heart tree</a><a href="#puzzle-section">Our puzzle</a><a href="#letter">Love letter</a>
+</nav>
+<main>
+<section class="hero" id="home">
+  <div>
+    <div class="eyebrow">A little universe made just for you</div>
+    <div class="heart-big" aria-hidden="true">💗</div>
+    <h1>Somya, meri<br>panditain jii</h1>
+    <p>From Mayank, with a heart full of love. I made this tiny corner of the internet just to remind you how special you are to me. 🌷</p>
+    <button class="btn" onclick="document.querySelector('#letter').scrollIntoView({behavior:'smooth'})">Open your surprise ✨</button>
+    <p class="small" style="margin-top:18px">P.S. Best viewed with a smile. 😊</p>
+  </div>
+</section>
+
+<section id="tree">
+  <div class="card center">
+    <div class="eyebrow">A little love grows every day</div>
+    <h2>Our heart tree 🌸</h2>
+    <p>Every heart is a little reminder of the moments, laughs, and memories I hope we keep making.</p>
+    <div class="tree-wrap">
+      <svg viewBox="0 0 600 390" role="img" aria-label="Illustration of a tree made of pink hearts">
+        <defs><linearGradient id="trunk" x1="0" x2="1"><stop stop-color="#8c5265"/><stop offset="1" stop-color="#c08091"/></linearGradient></defs>
+        <path d="M300 375 C290 310 318 258 292 212 C275 181 250 169 226 153 M301 290 C330 250 366 237 390 205 M292 240 C252 218 213 218 183 195 M305 260 C344 198 341 160 328 127" fill="none" stroke="url(#trunk)" stroke-width="15" stroke-linecap="round"/>
+        <g id="treeHearts"></g>
+        <text x="300" y="383" text-anchor="middle" font-size="13" fill="#a85a7a">Mayank ♡ Somya</text>
+      </svg>
+    </div>
+    <button class="btn secondary" onclick="growHearts()">Grow more hearts 💕</button>
+  </div>
+</section>
+
+<section id="puzzle-section">
+  <div class="card center">
+    <div class="eyebrow">A tiny memory game</div>
+    <h2>Piece by piece, us 💞</h2>
+    <p>Choose a favourite photo of you two. Then tap two tiles to swap them and put your memory back together.</p>
+    <label for="photoUpload"><strong>Choose your photo</strong></label><br>
+    <input id="photoUpload" type="file" accept="image/*">
+    <div id="puzzleGrid" class="puzzle" aria-label="Photo puzzle grid"></div>
+    <div class="grid">
+      <button class="btn" id="shuffleBtn">Shuffle puzzle</button>
+      <button class="btn secondary" id="resetBtn">Show full photo</button>
+    </div>
+    <p class="small puzzle-note">Your photo stays in this browser; it is not uploaded by this page. For a shared online page, use a photo you both are comfortable sharing.</p>
+    <p id="puzzleStatus" aria-live="polite"></p>
+  </div>
+</section>
+
+<section id="letter">
+  <div class="card">
+    <div class="center">
+      <div class="eyebrow">Just between us</div>
+      <h2>A letter for my panditain jii 💌</h2>
+    </div>
+    <div class="letter">Dear Somya,
+
+I don't always know how to put everything I feel into words, but I hope this little surprise says some of it.
+
+You make ordinary moments feel brighter. Your smile, your presence, and all the little things that make you *you* mean more to me than I can explain. I'm grateful for every laugh, every conversation, and every memory we get to share.
+
+I don't need a special date to celebrate you. I just wanted to make something that reminds you that you're loved and appreciated—not only on special days, but on ordinary ones too.
+
+So, panditain jii, here's one little promise from Mayank: I'll keep trying to make you smile, listen to you, and create more beautiful memories with you.
+
+With all my love,
+Mayank ❤️</div>
+    <hr>
+    <div class="center">
+      <label for="songUpload"><strong>Add your own song (optional)</strong></label><br>
+      <input id="songUpload" type="file" accept="audio/*">
+      <audio id="songPlayer" controls style="display:none;width:100%;margin-top:12px"></audio>
+      <p class="small">Choose an audio file saved on your device to preview it here. A song selected locally won't automatically be included for other visitors.</p>
+      <button class="btn" onclick="showFinalMessage()">One last thing… 💗</button>
+      <p id="finalMessage" hidden style="font-family:Georgia,serif;font-size:1.35rem;color:#b83269">If I could choose again, I'd still be happy to make more memories with you, Somya. 💖</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer>Made with love by Mayank, especially for Somya 💗</footer>
+<script>
+const svgNS='http://www.w3.org/2000/svg';
+const heartGroup=document.getElementById('treeHearts');
+function addHeart(x,y,size,fill,delay){
+ const t=document.createElementNS(svgNS,'text');t.setAttribute('x',x);t.setAttribute('y',y);t.setAttribute('font-size',size);t.setAttribute('text-anchor','middle');t.setAttribute('class','tree-heart');t.setAttribute('style',`animation-delay:${delay}s`);t.textContent='♥';t.setAttribute('fill',fill);heartGroup.appendChild(t);
+}
+function growHearts(){
+ heartGroup.innerHTML='';
+ const colors=['#f46b9b','#f7a2bd','#db4f87','#ffcadb','#e77ab0','#f6b94b'];
+ for(let i=0;i<74;i++){
+  const angle=i*2.399, r=22+Math.sqrt(i)*25;
+  const x=300+Math.cos(angle)*Math.min(r,160);
+  const y=174+Math.sin(angle)*Math.min(r*.66,100);
+  addHeart(x,y,10+(i%4)*3,colors[i%colors.length],(i%9)*-.18);
+ }
+}
+growHearts();
+setInterval(()=>{if(Math.random()>.45){const e=document.createElement('div');e.className='floating';e.textContent=['💗','💕','💖','♡'][Math.floor(Math.random()*4)];e.style.left=Math.random()*100+'vw';e.style.fontSize=(16+Math.random()*22)+'px';e.style.animationDuration=(6+Math.random()*6)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),12500)}},850);
+
+const puzzleEl=document.getElementById('puzzleGrid'), upload=document.getElementById('photoUpload');
+let photoUrl='', order=[0,1,2,3,4,5,6,7,8], selected=null, showWhole=false;
+function drawPuzzle(){
+ puzzleEl.innerHTML='';
+ if(!photoUrl){puzzleEl.innerHTML='<div class="tile empty" style="grid-column:span 3;display:grid;place-items:center;color:#a45d7d">Your photo will appear here 💗</div>';return}
+ order.forEach((piece,position)=>{
+  const b=document.createElement('button');b.className='tile'+(showWhole?' empty':'');b.setAttribute('aria-label','Photo tile '+(position+1));
+  if(showWhole){const im=document.createElement('img');im.src=photoUrl;im.style.left='0';im.style.top='0';im.style.width='100%';im.style.height='100%';im.style.objectFit='cover';b.appendChild(im)}
+  else{
+   const im=document.createElement('img');im.src=photoUrl;
+   im.style.left=(-(piece%3)*100)+'%';im.style.top=(-(Math.floor(piece/3))*100)+'%';im.style.width='300%';im.style.height='300%';im.style.objectFit='cover';
+   b.appendChild(im);
+   if(selected===position)b.style.outline='3px solid #d83f86';
+   b.onclick=()=>{if(selected===null){selected=position;drawPuzzle()}else{[order[selected],order[position]]=[order[position],order[selected]];selected=null;drawPuzzle();if(order.every((v,i)=>v===i))document.getElementById('puzzleStatus').textContent='You did it! A little memory, put back together. 💗'}};
+  }
+  puzzleEl.appendChild(b);
+ });
+}
+upload.addEventListener('change',e=>{const f=e.target.files&&e.target.files[0];if(!f)return;if(photoUrl)URL.revokeObjectURL(photoUrl);photoUrl=URL.createObjectURL(f);order=[0,1,2,3,4,5,6,7,8];showWhole=false;selected=null;drawPuzzle();document.getElementById('puzzleStatus').textContent='Photo added! Tap two tiles to swap them.'});
+document.getElementById('shuffleBtn').onclick=()=>{showWhole=false;selected=null;for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]]}if(order.every((v,i)=>v===i))[order[0],order[1]]=[order[1],order[0]];drawPuzzle();document.getElementById('puzzleStatus').textContent='Puzzle shuffled—can you put it back together?'};
+document.getElementById('resetBtn').onclick=()=>{showWhole=true;selected=null;drawPuzzle();document.getElementById('puzzleStatus').textContent='A beautiful memory of you two. 💞'};
+drawPuzzle();
+document.getElementById('songUpload').addEventListener('change',e=>{const f=e.target.files&&e.target.files[0];if(!f)return;const player=document.getElementById('songPlayer');player.src=URL.createObjectURL(f);player.style.display='block';player.load()});
+function showFinalMessage(){document.getElementById('finalMessage').hidden=false;document.getElementById('finalMessage').scrollIntoView({behavior:'smooth',block:'center'})}
+</script>
+</body>
+</html>

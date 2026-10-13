@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Somya 💗</title>
+<style>
+:root{--pink:#ff5c93;--deep:#8e315d;--cream:#fff7fb}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;color:#55223a;background:linear-gradient(135deg,#ffe1ee,#fff7fb 48%,#ffd3e3);min-height:100vh;overflow-x:hidden}
+main{width:min(920px,92%);margin:auto;padding:28px 0 60px}
+.hero{text-align:center;padding:28px 12px 18px}
+.kicker{letter-spacing:3px;text-transform:uppercase;font:600 12px Arial,sans-serif;color:#b14d78}
+h1{font-size:clamp(2.5rem,8vw,5.5rem);line-height:1;margin:18px 0;color:#a52f65}
+h1 span{display:block;font-size:.45em;margin-top:14px;color:#d44b83}
+.subtitle{font-size:1.15rem;line-height:1.6;max-width:600px;margin:0 auto}
+.card{background:#ffffffc9;border:1px solid #ffffff;box-shadow:0 18px 50px #a83b6d1c;border-radius:28px;padding:clamp(18px,4vw,34px);margin:22px 0}
+.photo-wrap{max-width:480px;margin:0 auto;position:relative}
+.photo-wrap img{display:block;width:100%;max-height:680px;object-fit:cover;object-position:center 42%;border-radius:22px;box-shadow:0 12px 30px #67204025}
+.caption{text-align:center;font-style:italic;font-size:1.2rem;line-height:1.6;margin:20px 0 2px}
+.letter{font-size:1.12rem;line-height:1.9;white-space:pre-line}
+.signature{font-size:1.4rem;color:#b12f68;text-align:right;margin-top:18px;font-style:italic}
+button{display:block;margin:24px auto 0;border:0;border-radius:999px;padding:14px 24px;background:linear-gradient(90deg,#ff6fa2,#dc4380);color:white;font-size:1rem;box-shadow:0 8px 18px #d9438033;cursor:pointer}
+.hidden-note{display:none;text-align:center;font-size:1.15rem;line-height:1.8;padding:18px 6px 0}
+.heart{position:fixed;bottom:-30px;pointer-events:none;animation:float 7s linear forwards;z-index:-1}
+@keyframes float{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+footer{text-align:center;color:#a75a7d;font:12px Arial,sans-serif;padding:14px}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="kicker">A little corner of the internet, just for you</div>
+    <h1>For Somya <span>meri pyaari panditain jii 💗</span></h1>
+    <p class="subtitle">Some people make ordinary days feel special. You make even a simple moment worth remembering.</p>
+  </header>
+  <section class="card">
+    <div class="photo-wrap">
+      <img src="somya-photo.jpeg" alt="A special photo of Somya">
+    </div>
+    <p class="caption">“My favourite view is the one that makes me smile without even trying.” 💞</p>
+  </section>
+  <section class="card">
+    <div class="kicker">A note from my heart</div>
+    <h2 style="text-align:center;color:#a52f65;font-size:2rem;margin:12px 0 22px">Dear Somya,</h2>
+    <div class="letter">Pata hai, tumhari smile mein kuch toh alag hi baat hai. Tumhari ek jhalak bhi mere din ko better bana deti hai.
+
+Main bas chahta hoon ki tum hamesha khush raho, dil khol ke hanso, aur kabhi na bhoolo ki tum mere liye kitni special ho.
+
+Yeh chhoti si website koi badi cheez nahi, bas mere dil ki taraf se ek chhota sa surprise hai — sirf tumhare liye. 💗</div>
+    <div class="signature">Tumhara, hamesha ✨</div>
+    <button id="reveal">Ek chhota sa surprise kholna 💌</button>
+    <div class="hidden-note" id="note">Panditain jii, duniya mein kitni bhi khoobsurat cheezein hon… meri favourite notification phir bhi tumhara message hi rahega. 🥹❤️<br><br>Thank you for being you.</div>
+  </section>
+  <footer>Made with lots of love, just for Somya 💕</footer>
+</main>
+<script>
+document.getElementById('reveal').addEventListener('click',function(){
+  const n=document.getElementById('note'); n.style.display=n.style.display==='block'?'none':'block';
+  this.textContent=n.style.display==='block'?'Surprise phir se chhupao 💗':'Ek chhota sa surprise kholna 💌';
+});
+function heart(){const e=document.createElement('div');e.className='heart';e.textContent=['💗','💕','💖','♡'][Math.floor(Math.random()*4)];e.style.left=Math.random()*100+'vw';e.style.fontSize=(16+Math.random()*22)+'px';e.style.animationDuration=(5+Math.random()*5)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),10500)}
+setInterval(heart,650);
+</script>
+</body>
+</html>
